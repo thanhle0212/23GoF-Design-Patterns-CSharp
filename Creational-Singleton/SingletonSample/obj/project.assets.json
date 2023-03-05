@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macintosh/Desktop/Design Patterns Course/Code Sample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
+      "projectUniqueName": "/Users/macintosh/Desktop/Design Patterns Course/DesignPatternsSample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
       "projectName": "SingletonSample",
-      "projectPath": "/Users/macintosh/Desktop/Design Patterns Course/Code Sample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
+      "projectPath": "/Users/macintosh/Desktop/Design Patterns Course/DesignPatternsSample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
       "packagesPath": "/Users/macintosh/.nuget/packages/",
-      "outputPath": "/Users/macintosh/Desktop/Design Patterns Course/Code Sample/Creational-Singleton/SingletonSample/obj/",
+      "outputPath": "/Users/macintosh/Desktop/Design Patterns Course/DesignPatternsSample/Creational-Singleton/SingletonSample/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

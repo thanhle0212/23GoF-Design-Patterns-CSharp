@@ -3,12 +3,12 @@ using SingletonSample;
 
 Thread process1 = new Thread(() => {
     Singleton singleton  = Singleton.GetInstance("Instance 1");
-    singleton.Print("Hello from Thread 1");
+    singleton.Print(singleton.InitialValue);
 });
 
 Thread process2 = new Thread(() => {
     Singleton singleton  = Singleton.GetInstance("Instance 2");
-    singleton.Print("Hello from Thread 2");
+    singleton.Print(singleton.InitialValue);
 });
 
 process1.Start();

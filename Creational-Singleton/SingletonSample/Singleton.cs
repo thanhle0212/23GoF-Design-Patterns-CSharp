@@ -30,7 +30,7 @@ namespace SingletonSample
         {
             // Using locks we can synchronize the method. 
             // So that only one thread can access it at any given point of time.
-            lock (_lock)
+            lock(_lock)
             {
                 // Check if the Singleton field is already initialized, the thread won't create a new object.
                 if (_instance == null)

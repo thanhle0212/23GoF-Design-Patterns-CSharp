@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4kRpxMlde/nosXGtiVnP7nQwsGpoZ0m1P4dpPMkwkMzHcGIXfooLIaEpYMZlZ9fGiMEGy7810a/c0+FCbppCHA==",
+  "dgSpecHash": "Vdy2uM2ajdLzReBswamMgHlQJoynd9LAt3mCur0c71qykyalZStI80ahcsPDWeL9olloONH8kkUfq34oQDBkiw==",
   "success": true,
-  "projectFilePath": "/Users/macintosh/Desktop/Design Patterns Course/Code Sample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
+  "projectFilePath": "/Users/macintosh/Desktop/Design Patterns Course/DesignPatternsSample/Creational-Singleton/SingletonSample/SingletonSample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
