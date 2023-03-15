@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace FactoryMethodSample
 {
     // Step 1: Define the Vehicle interface/abstract class 
@@ -19,7 +14,7 @@ namespace FactoryMethodSample
     {
         public string Operation()
         {
-            return "Deliver by Ship!";
+            return "Ship!";
         }
     }
 
@@ -27,7 +22,7 @@ namespace FactoryMethodSample
     {
         public string Operation()
         {
-            return "Deliver by Car!";
+            return "Car!";
         }
     }
 
@@ -35,7 +30,15 @@ namespace FactoryMethodSample
     {
         public string Operation()
         {
-            return "Deliver by Aircraft!";
+            return "Aircraft!";
+        }
+    }
+
+    public class Train:IVehicle
+    {
+        public string Operation()
+        {
+            return "Train!";
         }
     }
 }
