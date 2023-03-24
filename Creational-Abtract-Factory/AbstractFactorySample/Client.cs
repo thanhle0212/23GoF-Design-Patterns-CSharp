@@ -9,7 +9,7 @@ namespace AbstractFactorySample
             // Generate Windows UI Controls
             GenerateUI(new WindowsGUIFactory());
             Console.WriteLine("===========================");
-            // Generate Windows UI Controls
+            // Generate MacOS UI Controls
             GenerateUI(new MacOSGUIFactory());
         }
 
