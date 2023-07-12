@@ -21,7 +21,7 @@ Console.WriteLine("\n Blue color Circles");
 for (int i = 0; i < 3; ++i)
 {
     Circle circle = (Circle)ShapeFactory.GetShape("circle");
-    circle.SetColor("Green");
+    circle.SetColor("Blue");
     circle.Draw();
 }
 //Creating Circle Objects with Orange Color
