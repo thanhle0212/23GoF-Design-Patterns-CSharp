@@ -2,7 +2,7 @@ namespace CoRSample
 {
     public class CTO : BaseApprover
     {
-        public override void Process(GadgetPurchase request)
+        public override void Process(Product request)
         {
             if (request.ProposedAmount < 3000)
             {

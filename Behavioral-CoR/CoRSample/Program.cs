@@ -9,12 +9,12 @@ tech.SetTheNextHandler(cto);
 cto.SetTheNextHandler(ceo);
 
 // Generate and process purchase requests
-var purchase1 = new GadgetPurchase("DELL Laptop", 1600);
+var purchase1 = new Product("DELL Laptop", 1600);
 tech.Process(purchase1);
 
-var purchase2 = new GadgetPurchase("Macbook Pro", 3000);
+var purchase2 = new Product("Macbook Pro", 3000);
 tech.Process(purchase2);
 
-var purchase3 = new GadgetPurchase("New Car", 30000);
+var purchase3 = new Product("New Car", 30000);
 tech.Process(purchase3);
 

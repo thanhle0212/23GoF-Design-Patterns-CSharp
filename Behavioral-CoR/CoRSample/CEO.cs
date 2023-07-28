@@ -2,9 +2,9 @@ namespace CoRSample
 {
     public class CEO : BaseApprover
     {
-        public override void Process(GadgetPurchase request)
+        public override void Process(Product request)
         {
-            if (request.ProposedAmount < 4500)
+            if (request.ProposedAmount <= 4500)
             {
                 Console.WriteLine($"{this.GetType().Name} approved: " +
                     $"{request.RequestType}");

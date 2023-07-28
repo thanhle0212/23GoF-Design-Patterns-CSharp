@@ -1,11 +1,11 @@
 namespace CoRSample
 {
-    public class GadgetPurchase
+    public class Product
     {
         public string RequestType { get; set; }
         public double ProposedAmount { get; set; }
 
-        public GadgetPurchase(string requestType, double proposedAmount)
+        public Product(string requestType, double proposedAmount)
         {
             RequestType = requestType;
             ProposedAmount = proposedAmount;
