@@ -13,7 +13,15 @@ namespace CommandSample
             _valueToAdd = valueToAdd;
         }
 
-        public double Execute(double currentValue) => currentValue += _valueToAdd;
-        public double Undo(double currentValue) => currentValue -= _valueToAdd;
+        public double Execute(double currentValue)
+        {
+            var calculatorBiz = new CalculatorBiz();
+            return calculatorBiz.Add(currentValue, _valueToAdd);
+        }
+        public double Undo(double currentValue)  
+        {
+            var calculatorBiz = new CalculatorBiz();
+            return calculatorBiz.Subtract(currentValue, _valueToAdd);
+        }
     }
 }

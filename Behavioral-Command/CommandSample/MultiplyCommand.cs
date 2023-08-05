@@ -12,8 +12,16 @@ namespace CommandSample
         {
             _valueToMultiply = valueToMultiply;
         }
-        public double Execute(double currentValue) => currentValue *= _valueToMultiply;
-        public double Undo(double currentValue) => currentValue /= _valueToMultiply;
+        public double Execute(double currentValue)
+        {
+            var calculatorBiz = new CalculatorBiz();
+            return calculatorBiz.Multiply(currentValue, _valueToMultiply);
+        }
+        public double Undo(double currentValue)
+        {
+            var calculatorBiz = new CalculatorBiz();
+            return calculatorBiz.Divide(currentValue, _valueToMultiply);
+        }
     }
 
 }
