@@ -10,6 +10,6 @@ namespace CoRSample
             _nextHandler = handler;
         }
 
-        public abstract void Process(Products request);
+        public abstract void Process(Product request);
     }
 }

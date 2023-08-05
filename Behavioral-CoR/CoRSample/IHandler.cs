@@ -4,6 +4,6 @@ namespace CoRSample
     {
         public void SetTheNextHandler(IHandler handler);
 
-        public void Process(GadgetPurchase request);
+        public void Process(Product request);
     }
 }
