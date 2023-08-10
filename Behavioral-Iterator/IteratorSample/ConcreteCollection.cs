@@ -9,7 +9,7 @@ namespace IteratorSample
         //Implementing the CreateIterator method of the IAbstractCollection interface
         //The following method is going to Create and return the Iterator Object
         //Later we will implement the Iterator
-        public Iterator CreateIterator()
+        public IAbstractIterator CreateIterator()
         {
             return new Iterator(this);
         }

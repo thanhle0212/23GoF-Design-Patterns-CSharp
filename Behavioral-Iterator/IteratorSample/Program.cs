@@ -10,7 +10,7 @@ collection.AddEmployee(new Elempoyee("Peter", 5));
 collection.AddEmployee(new Elempoyee("Tom", 6));
 
 // Create iterator
-Iterator iterator = collection.CreateIterator();
+Iterator iterator = (Iterator)collection.CreateIterator();
 //looping iterator      
 Console.WriteLine("Iterating over collection:");
 
