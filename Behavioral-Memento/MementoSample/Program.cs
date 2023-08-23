@@ -1,16 +1,25 @@
 ﻿using MementoSample;
 
-Originator originator = new Originator();
-Caretaker caretaker = new Caretaker();
+// Client code.
+Originator originator = new Originator(1);
+Caretaker caretaker = new Caretaker(originator);
 
-originator.Product = new Product(1, "Item A", 10);
-caretaker.AddMemento(originator.CreateMemento());
+caretaker.Backup();
+originator.GenerateNewState(5);
 
-originator.Product = new Product(2, "Item B", 20);
-caretaker.AddMemento(originator.CreateMemento());
+caretaker.Backup();
+originator.GenerateNewState(10);
 
-originator.Product = new Product(3, "Item C", 30);
-caretaker.AddMemento(originator.CreateMemento());
+caretaker.Backup();
+originator.GenerateNewState(100);
 
-originator.RestoreMemento(caretaker.GetMemento(1));
-Console.WriteLine($"Current product: {originator.Product}");
+Console.WriteLine();
+caretaker.ShowHistory();
+
+Console.WriteLine("\nClient: Now, let's rollback!\n");
+caretaker.Undo();
+
+Console.WriteLine("\n\nClient: Once more!\n");
+caretaker.Undo();
+
+Console.WriteLine();
