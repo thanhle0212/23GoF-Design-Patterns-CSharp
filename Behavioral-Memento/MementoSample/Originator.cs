@@ -5,7 +5,6 @@ namespace MementoSample
         // For the sake of simplicity, the originator's state is stored inside a
         // single variable.
         private int _state;
-
         public Originator(int state)
         {
             this._state = state;

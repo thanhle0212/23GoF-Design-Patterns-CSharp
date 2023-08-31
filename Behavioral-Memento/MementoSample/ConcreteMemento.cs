@@ -3,9 +3,7 @@ namespace MementoSample
     public class ConcreteMemento: IMemento
     {
         private int _state;
-
         private DateTime _date;
-
         public ConcreteMemento(int state)
         {
             this._state = state;

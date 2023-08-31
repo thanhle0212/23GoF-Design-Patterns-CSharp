@@ -3,9 +3,7 @@ namespace MementoSample
     public class Caretaker
     {
         private List<IMemento> _mementos = new List<IMemento>();
-
         private Originator _originator = null;
-
         public Caretaker(Originator originator)
         {
             this._originator = originator;
@@ -23,13 +21,11 @@ namespace MementoSample
             {
                 return;
             }
-
             var memento = this._mementos.Last();
             this._mementos.Remove(memento);
 
             Console.WriteLine("Caretaker: Restoring state to: " + memento.GetName());
             this._originator.Restore(memento);
-
         }
 
         public void ShowHistory()
@@ -41,6 +37,5 @@ namespace MementoSample
                 Console.WriteLine(memento.GetName());
             }
         }
-
     }
 }
