@@ -22,9 +22,22 @@ namespace ObserverSample
         public void SetAvailability()
         {
             Console.WriteLine("Availability changed from Out of Stock to Available.");
-            NotifyObservers();
+            NotifySubscribers();
         }
 
+        // The following Method will be sent notifications to all Subscribers
+        public void NotifySubscribers()
+        {
+            Console.WriteLine("Product Name :"
+                            + ProductName + ", product Price : "
+                            + ProductPrice + " is Now available. So, notifying all Registered users ");
+            Console.WriteLine();
+            foreach (ISubscriber subscriber in subscribers)
+            {
+                //By Calling the Update method, we are sending notifications to Subscriber
+                subscriber.Update();
+            }
+        }
            // The subscriber will register with the Product using the following method
         public void RegisterSubscriber(ISubscriber subscriber)
         {
@@ -38,18 +51,6 @@ namespace ObserverSample
             Console.WriteLine($"Subscriber Removed : {((Subscriber)subscriber).UserName}");
             subscribers.Remove(subscriber);
         }
-        // The following Method will be sent notifications to all observers
-        public void NotifyObservers()
-        {
-            Console.WriteLine("Product Name :"
-                            + ProductName + ", product Price : "
-                            + ProductPrice + " is Now available. So, notifying all Registered users ");
-            Console.WriteLine();
-            foreach (ISubscriber subscriber in subscribers)
-            {
-                //By Calling the Update method, we are sending notifications to observers
-                subscriber.Update();
-            }
-        }
+       
     }
 }
