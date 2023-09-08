@@ -28,9 +28,7 @@ namespace ObserverSample
         // The following Method will be sent notifications to all Subscribers
         public void NotifySubscribers()
         {
-            Console.WriteLine("Product Name :"
-                            + ProductName + ", product Price : "
-                            + ProductPrice + " is Now available. So, notifying all Registered users ");
+            Console.WriteLine($"Product Name : {ProductName} , product Price : {ProductPrice} is Now available. So, notifying all Registered users ");
             Console.WriteLine();
             foreach (ISubscriber subscriber in subscribers)
             {
