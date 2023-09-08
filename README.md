@@ -10,7 +10,6 @@
  - Singleton
 
  **Structural Design Pattern**
- - List item
  - Adapter
  - Bridge
  - Composite
