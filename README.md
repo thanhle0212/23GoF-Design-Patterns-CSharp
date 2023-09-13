@@ -10,7 +10,6 @@
  - Singleton
 
  **Structural Design Pattern**
- - List item
  - Adapter
  - Bridge
  - Composite
@@ -27,6 +26,7 @@
  - Mediator
  - Memento
  - Observer
+ - State
  - Strategy
  - Template Method
  - Visitor
