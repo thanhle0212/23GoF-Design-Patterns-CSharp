@@ -2,10 +2,6 @@ namespace TemplateMethodSample
 {
     public class ConcreteHouse : HouseTemplate
     {
-        protected override void BuildFoundation()
-        {
-            Console.WriteLine("Building foundation with cement, iron rods and sand");
-        }
         protected override void BuildPillars()
         {
             Console.WriteLine("Building Concrete Pillars with Cement and Sand");

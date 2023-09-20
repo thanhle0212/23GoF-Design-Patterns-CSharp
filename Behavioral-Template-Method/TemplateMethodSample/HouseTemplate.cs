@@ -12,8 +12,14 @@ namespace TemplateMethodSample
             BuildWindows(); //Step4
             Console.WriteLine("House is Built");
         }
+
+        // Default implementation 
+        protected virtual void BuildFoundation()
+        {
+            Console.WriteLine("Building foundation with cement, iron rods and sand");
+        }
+
         // Methods to be implemented by subclasses
-        protected abstract void BuildFoundation();
         protected abstract void BuildPillars();
         protected abstract void BuildWalls();
         protected abstract void BuildWindows();
