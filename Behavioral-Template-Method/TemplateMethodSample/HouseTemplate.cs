@@ -2,7 +2,7 @@ namespace TemplateMethodSample
 {
     public abstract class HouseTemplate
     {
-         // Template Method defines the sequence for building a house
+        // Template Method defines the sequence for building a house
         public void BuildHouse()
         {
             //Define the Steps to Build a House
@@ -10,6 +10,7 @@ namespace TemplateMethodSample
             BuildPillars(); //Step2
             BuildWalls(); //Step3
             BuildWindows(); //Step4
+            BuildRoof(); // Step 5
             Console.WriteLine("House is Built");
         }
 
@@ -19,6 +20,10 @@ namespace TemplateMethodSample
             Console.WriteLine("Building foundation with cement, iron rods and sand");
         }
 
+        protected virtual void BuildRoof()
+        {
+            Console.WriteLine("Building roof");
+        }
         // Methods to be implemented by subclasses
         protected abstract void BuildPillars();
         protected abstract void BuildWalls();
