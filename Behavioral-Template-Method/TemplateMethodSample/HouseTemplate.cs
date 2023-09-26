@@ -19,7 +19,6 @@ namespace TemplateMethodSample
         {
             Console.WriteLine("Building foundation with cement, iron rods and sand");
         }
-
         protected virtual void BuildRoof()
         {
             Console.WriteLine("Building roof");
